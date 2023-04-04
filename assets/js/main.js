@@ -44,13 +44,16 @@ function createGrid(){
         divItem.innerText = i;
         document.querySelector('.grid').append(divItem);
 
-    }
+        /* al click, colora la cella e prendi il valore */
+        divItem.addEventListener('click', function(){
+            console.log(this.innerText);
+            this.classList.add('clicked');
+        })
 
-    console.log( diffValue )
+    }
 
 }
 /* end: function to create the grid */
-
 
 /* start: create a function for setting a variable value */
 function myFunction_set( x ) {
