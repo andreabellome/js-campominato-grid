@@ -20,3 +20,27 @@
     height: var(--height-button);
 }
 
+/* start: griglia */
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: auto;
+
+    width: 700px;
+    height: 700px;
+}
+
+.item{
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc( 100% / 10 );
+    height: calc( 100% / 10 );
+
+}
+/* end: griglia */
+

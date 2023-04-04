@@ -23,6 +23,7 @@
 </head>
 <body>
     
+    <!-- start: container -->
     <div class="debug" style="height: 100vh;">
 
         <!-- start: header -->
@@ -32,17 +33,36 @@
                 Campo minato
             </h1>
     
-            <button type="button" class="btn btn-light border-col-dark height-button">
-                Gioca
-            </button>
+            <div class="debug flex flex-dir-row">
+                
+
+                <select class="form-select mr-10" aria-label="Default select example" style="display: block;">
+                    <option selected>Difficoltà</option>
+                    <option value="100">Facile</option>
+                    <option value="81">Medio</option>
+                    <option value="49">Difficile</option>
+                </select>
+
+                <button type="button" class="btn btn-light border-col-dark height-button" style="display: block;">
+                    Gioca
+                </button>
+
+            </div>
+            
     
         </div>
         <!-- end: header -->
 
         <!-- start: main -->
-        <div class="debug height-main">
+        <div class="debug height-main bg-light-green-v2 padd-10 flex align-it-center">
 
-            Chicco
+            <div class="grid">
+
+                <div class="item">
+                    1
+                </div>
+
+            </div>
 
         </div>
         <!-- end: main -->
@@ -58,13 +78,7 @@
         <!-- end: footer -->
 
     </div>
-
-    
-
-
-    
-
-    
+    <!-- end: container -->
 
     <!-- js -->
     <script src="./assets/js/main.js"></script>
