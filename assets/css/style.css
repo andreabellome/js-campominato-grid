@@ -1,0 +1,22 @@
+:root{
+    --height-header: 90px;
+    --height-footer: 70px;
+    --height-button: 40px;
+}
+
+.height-header{
+    height: var(--height-header);
+}
+
+.height-footer{
+    height: var(--height-footer);
+}
+
+.height-main{
+    height: calc(100% - var(--height-header) - var(--height-footer) );
+}
+
+.height-button{
+    height: var(--height-button);
+}
+
