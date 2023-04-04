@@ -2,6 +2,9 @@
     --height-header: 90px;
     --height-footer: 70px;
     --height-button: 40px;
+
+    --cellNum: 10;
+
 }
 
 .height-header{
@@ -38,9 +41,14 @@
     align-items: center;
     justify-content: center;
 
-    width: calc( 100% / 10 );
-    height: calc( 100% / 10 );
+    width: calc( 100% / var(--cellNum) );
+    height: calc( 100% / var(--cellNum) );
 
 }
+
+.clicked{
+    background-color: lightskyblue;
+}
+
 /* end: griglia */
 
